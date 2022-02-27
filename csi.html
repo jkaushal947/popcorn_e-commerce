@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSI - Mandy Popcorn</title>
+    <link rel="icon" href="images/logo.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.svg" width="50px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#follow_us">Follow Us</a></li>
+                    <li><a href="csi.html">CSI</a></li>
+                    <li><a href="contact_us.html">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="images/icons/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+
+    <!----------- csi details --------->
+    <div class="csi-title">
+        <h1>Corporate Social Investment (CSI)</h1>
+    </div>
+    <div class="csi-image">
+        <img src="images/csi.jpg">
+    </div>
+    <div class="csi-info">
+        <p>We dedicate a portion of our proceeds towards supporting social development activities in our community.</p>
+    </div>
+
+    <!-------- footer -------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="icons">
+                    <ul>
+                        <li><a href="https://twitter.com/mandy_popcorn"><i class="fa fa-twitter"></i></a></li>
+                        <li><i class="fa fa-facebook"></i></li>
+                        <li><i class="fa fa-google"></i></li>
+                        <li><i class="fa fa-instagram"></i></li>
+                    </ul>
+                    <br>
+                    <p class="copyright">&#169; 2021 Mandy Popcorn</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body></html>

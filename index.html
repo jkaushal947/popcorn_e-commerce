@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mandy Popcorn | E-Commerce Website</title>
+    <title>Mandy Popcorn</title>
     <link rel="icon" href="images/logo.svg">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -17,29 +17,30 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <img src="images/logo.svg" width="50px">
+                    <a href="index.html"><img src="images/logo.svg" width="50px"></a>
                 </div>
                 <nav>
                     <ul id="MenuItems">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Products</a></li>
-                        <li><a href="">Find Us</a></li>
-                        <li><a href="">CSI</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#follow_us">Follow Us</a></li>
+                        <li><a href="csi.html">CSI</a></li>
+                        <li><a href="contact_us.html">Contact</a></li>
                     </ul>
                 </nav>
-                <img src="images/icons/cart.png" width="30px" height="30px">
                 <img src="images/icons/menu.png" class="menu-icon" onclick="menutoggle()">
             </div>
             <div class="row">
                 <div class="col-2">
-                    <h1>High Quality Popcorn<br>At Its Best!</h1>
-                    <p>Our satisfaction is in having you relax, crunch and enjoy a bag of crisp <br>Mandy Popcorn anytime, with family and friends!</p>
-                    <a href="" class="btn">Explore Now &#8594;</a>
+                    <h1>Crisp, Fluffy, Full of Flavour</h1>
+                    <h1>Made in Small Batches</h1>
+                    <h1>Quality Ingredients Carefully Sourced</h1>
+                    <h1>Relax, Crunch, Enjoy</h1>
+                    <a href="#products" class="btn">Explore Now &#8594;</a>
                 </div>
                 <div class="col-2">
-                    <img src="images/popcorn.jpg">
+                    <img src="images/mandy_popcorn_products.png">
                 </div>
             </div>
         </div>
@@ -48,90 +49,60 @@
     <!-------- featured products -------->
 
     <div class="small-container">
-        <h2 class="title">Our Products</h2>
+        <h2 class="title" id="products">Our Products</h2>
         <div class="row">
-            <div class="col-4">
-                <img src="images/butter_salted.png">
-                <h4>Butter Salted</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-                <p>Price: TBC</p>
+            <div class="col-4"><a href="butter_salted.html">
+                    <img src="images/butter_salted.png">
+                    <h4>Butter Salted</h4>
+                    <div class="content">
+                        <p>Read More</p>
+                    </div>
+                </a>
             </div>
-            <div class="col-4">
-                <img src="images/just_salted.png">
-                <h4>Just Salted</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>Price: TBC</p>
+            <div class="col-4"><a href="just_salted.html">
+                    <img src="images/just_salted.png">
+                    <h4>Just Salted</h4>
+                    <div class="content">
+                        <p>Read More</p>
+                    </div>
+                </a>
             </div>
-            <div class="col-4">
-                <img src="images/sweet_chilli.png">
-                <h4>Sweet Chilli</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>Price: TBC</p>
+            <div class="col-4"><a href="sweet_chilli.html">
+                    <img src="images/sweet_chilli.png">
+                    <h4>Sweet Chilli</h4>
+                    <div class="content">
+                        <p>Read More</p>
+                    </div>
+                </a>
             </div>
-            <div class="col-4">
-                <img src="images/sweet_salted.png">
-                <h4>Sweet Salted</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>Price: TBC</p>
+            <div class="col-4"><a href="sweet_salted.html">
+                    <img src="images/sweet_salted.png">
+                    <h4>Sweet Salted</h4>
+                    <div class="content">
+                        <p>Read More</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
 
-    <!-------- brands -------->
+    <!-------- social -------->
 
     <div class="brands">
         <div class="small-container">
-            <h2 class="title">Where To Find Mandy&#174; Popcorn</h2>
+            <h2 class="title" id="follow_us">Follow Us</h2>
             <div class="row">
                 <div class="col-5">
-                    <img src="images/brands/quickmart.png">
+                    <img src="images/twitter_logo.png">
                 </div>
                 <div class="col-5">
-                    <img src="images/brands/naivas.png">
+                    <img src="images/facebook_logo.png">
                 </div>
                 <div class="col-5">
-                    <img src="images/brands/carrefour.svg">
+                    <img src="images/youtube_logo.png">
                 </div>
                 <div class="col-5">
-                    <img src="images/brands/tuskys.png">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-5">
-                    <img src="images/brands/g-mart.jpg">
-                </div>
-                <div class="col-5">
-                    <img src="images/brands/tumaini.jpg">
-                </div>
-                <div class="col-5">
-                    <img src="images/brands/cleanshelf.png">
-                </div>
-                <div class="col-5">
-                    <img src="images/brands/eastmatt.jpg">
+                    <img src="images/instagram_logo.png">
                 </div>
             </div>
         </div>
@@ -144,10 +115,10 @@
             <div class="row">
                 <div class="icons">
                     <ul>
-                        <li><a href="https://twitter.com/mandy_popcorn"><i class="fa fa-twitter"></i></a></li>
-                        <li><i class="fa fa-facebook"></i></li>
-                        <li><i class="fa fa-google"></i></li>
-                        <li><i class="fa fa-instagram"></i></li>
+                        <li><a href="https://twitter.com/mandy_popcorn"><i class="fab fa-twitter"></i></a></li>
+                        <li><a><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCs3s1f-K0IPUBTL0KNWO0Xw"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="https://www.instagram.com/mandy_popcorn"><i class="fab fa-instagram"></i></a></li>
                     </ul>
                     <br>
                     <p class="copyright">&#169; 2021 Mandy Popcorn</p>
@@ -161,7 +132,7 @@
         MenuItems.style.maxHeight = "0px";
 
         function menutoggle() {
-            if (MenuItems.style.maxHeight =="0px") {
+            if (MenuItems.style.maxHeight == "0px") {
                 MenuItems.style.maxHeight = "200px";
             } else {
                 MenuItems.style.maxHeight = "0px";

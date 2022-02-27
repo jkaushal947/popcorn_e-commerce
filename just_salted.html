@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Salted - Mandy Popcorn</title>
+    <link rel="icon" href="images/logo.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.svg" width="50px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#follow_us">Follow Us</a></li>
+                    <li><a href="csi.html">CSI</a></li>
+                    <li><a href="contact_us.html">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="images/icons/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+
+    <!----------- single product details --------->
+    <div class="product-title">
+        <p>Products / Just Salted</p>
+        <h1>Just Salted</h1>
+    </div>
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2 img-hover-zoom">
+                <img src="images/just_salted.png" width="80%">
+            </div>
+            <div class="col-2 img-hover-zoom">
+                <img src="images/just_salted_info_1.png" width="70%">
+            </div>
+            <div class="info-col-2">
+                <h3>Description</h3>
+                <p>Mandy® Just Salted Popcorn is perfectly popped and seasoned<br> with the right balance of ingredients to achieve a pleasant original popcorn taste. <br>Go ahead … enjoy our lightly salted popcorn with family and friends.</p>
+                <br>
+                <h3>Ingredients</h3>
+                <p>Corn, vegetable oil, salt</p>
+            </div>
+            <div class="info-col-2">
+                <h3>Storage Information</h3>
+                <p>Store in a cool, dry place. Once opened, store in an airtight container to maintain freshness</p>
+                <br>
+                <h3>Allergy Information</h3>
+                <p>Produced in a facility that also handles dairy based products</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="small-container related-products">
+        <h2>Related Products</h2>
+        <div class="row">
+            <div class="col-4"><a href="butter_salted.html">
+                    <img src="images/butter_salted.png">
+                    <p>Butter Salted</p>
+                </a>
+            </div>
+            <div class="col-4"><a href="sweet_chilli.html">
+                    <img src="images/sweet_chilli.png">
+                    <p>Sweet Chilli</p>
+                </a>
+            </div>
+            <div class="col-4"><a href="sweet_salted.html">
+                    <img src="images/sweet_salted.png">
+                    <p>Sweet & Salted</p>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-------- footer -------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="icons">
+                    <ul>
+                        <li><a href="https://twitter.com/mandy_popcorn"><i class="fa fa-twitter"></i></a></li>
+                        <li><i class="fa fa-facebook"></i></li>
+                        <li><i class="fa fa-google"></i></li>
+                        <li><i class="fa fa-instagram"></i></li>
+                    </ul>
+                    <br>
+                    <p class="copyright">&#169; 2021 Mandy Popcorn</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body></html>

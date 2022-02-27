@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Mandy Popcorn</title>
+    <link rel="icon" href="images/logo.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.svg" width="50px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#follow_us">Follow Us</a></li>
+                    <li><a href="csi.html">CSI</a></li>
+                    <li><a href="contact_us.html">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="images/icons/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+
+    <!----------- csi details --------->
+    <div class="about-us-title">
+        <h1>About Us</h1>
+    </div>
+    <div class="about-us-image">
+        <img src="images/popcorn.jpg">
+    </div>
+    <div class="about-us-info">
+        <h3>Our Story</h3>
+        <p>Our satisfaction is in having you relax, crunch and enjoy a bag of crisp Mandy® Popcorn anytime, with family and friends!</p>
+        <h3>Our Values</h3>
+        <ul class="values">
+            <li>Quality</li>
+            <li>Consistency</li>
+            <li>Simplicity</li>
+        </ul>
+        <h3>How It Started</h3>
+        <p>Started in our kitchen as a family favorite snack back in 2015 and later decided to share the joy with world.</p>
+        <h3>The Process of Making Popcorn</h3>
+        <p>Click on these links to see how popcorn is made</p>
+        <div class="grid-row reverse video-gallery">
+            <input type="radio" value="1" name="video-list" id="video-1" checked="checked" /><label for="video-1">Stage #1</label>
+            <input type="radio" value="2" name="video-list" id="video-2" /><label for="video-2">Stage #2</label>
+            <input type="radio" value="3" name="video-list" id="video-3" /><label for="video-3">Stage #3</label>
+            <input type="radio" value="4" name="video-list" id="video-4" /><label for="video-4">Stage #4</label>
+            <input type="radio" value="5" name="video-list" id="video-5" /><label for="video-5">Stage #5</label>
+            <!-- videos -->
+            <div class="video video-1">
+                <iframe width="280" height="157" src="videos/popcorn%20making%20(part%201).mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="video video-2">
+                <iframe width="280" height="157" src="videos/popcorn%20making%20(part%202).mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="video video-3">
+                <iframe width="280" height="157" src="videos/popcorn%20making%20(part%203).mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="video video-4">
+                <iframe width="280" height="157" src="videos/popcorn%20making%20(part%204).mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="video video-5">
+                <iframe width="280" height="157" src="videos/popcorn%20making%20(part%205).mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <!-- videos -->
+        </div>
+    </div>
+
+    <!-------- footer -------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="icons">
+                    <ul>
+                        <li><a href="https://twitter.com/mandy_popcorn"><i class="fa fa-twitter"></i></a></li>
+                        <li><i class="fa fa-facebook"></i></li>
+                        <li><i class="fa fa-google"></i></li>
+                        <li><i class="fa fa-instagram"></i></li>
+                    </ul>
+                    <br>
+                    <p class="copyright">&#169; 2021 Mandy Popcorn</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
